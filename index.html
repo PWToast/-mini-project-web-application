@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {text-align: center;}
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;    
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <center>
+        <div class="a">
+            <h1 style="color: blue;">โปรแกรมคำนวณเงินฝาก</h1><br>
+            <span>จำนวนเงินต้น</span>
+            <input id="p" type="text"><br><br>
+            <span>อัตราดอกเบี้ย(%)</span>
+            <input id="r" type="text"><br><br>
+            <span>จำนวนปี</span>
+            <input id="year" type="text">
+            <br><br><button type="button" class="btn btn-secondary" onclick="calsummary()">คำนวณ</button><br><br>
+            <div class="b" id="result"></div>
+        </div>
+        </center>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="code.js"></script>
+</body>
+</html> 
